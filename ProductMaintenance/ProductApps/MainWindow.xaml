@@ -19,6 +19,8 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="164,278,0,-59" VerticalAlignment="Top" Width="100"/>
         <Label Content="Total charge after adding&#xA;the wrap charge ($5)" HorizontalAlignment="Left" Margin="48,237,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="wrapChargeTextBlock" HorizontalAlignment="Left" Margin="199,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Total charge after GST@10%" HorizontalAlignment="Left" Margin="48,277,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="afterGSTTextBlock" HorizontalAlignment="Left" Margin="215,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
 
 
     </Grid>

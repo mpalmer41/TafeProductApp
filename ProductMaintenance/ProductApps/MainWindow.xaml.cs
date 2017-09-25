@@ -30,6 +30,7 @@ namespace ProductApps
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
             decimal totalCharge;
+            decimal totalChargeAfterGst;
 
             try
             {
@@ -47,6 +48,9 @@ namespace ProductApps
 
             totalCharge = totalCharge + 5; // wrapping cost
             wrapChargeTextBlock.Text = totalCharge.ToString();
+
+            totalChargeAfterGst = totalCharge * 1.1m; // gst added
+            afterGSTTextBlock.Text = totalChargeAfterGst.ToString();
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
@@ -57,6 +61,7 @@ namespace ProductApps
             totalPaymentTextBlock.Text = "";
             totalChargeTextBlock.Text = "";
             wrapChargeTextBlock.Text = "";
+            afterGSTTextBlock.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
