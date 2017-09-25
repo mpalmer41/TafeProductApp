@@ -39,6 +39,9 @@ namespace ProductApps
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+
+
+            totalChargeTextBlock.Text = (cProduct.TotalPayment + 25).ToString();
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
@@ -47,6 +50,7 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            totalChargeTextBlock.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
